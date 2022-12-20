@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <div>
+        <p id="loop"></p>
+        <button onclick="call_loop()">Click here to execute loop.</button>
+    </div>
+
+    <div>
+        <p id="instruments"></p>
+        <button onclick="for_loop()">Click me</button>
+    </div>
+
+    <div>
+        <p id="band"></p>
+        <p onclick="bands()">Click here for a band.</p> 
+    </div>
+
+    <div>
+        <p id="constant"></p>
+        <button onclick="constant_function()">Click here!</button>
+    </div>
+
+    <div>
+        <p id="pie"></p> 
+        <script>
+            function get() {
+            return Math.PI;
+}
+            document.getElementById("pie").innerHTML = get();
+        </script>
+    </div>
+
+    <div>
+        <p id="Tank"></p> 
+    </div>
+
+    <div>
+        <p id="broke"></p>
+
+        <script>
+            let text = "";
+            for (let j = 0; j < 10; j++) {
+            if (j === 4) { break; }
+            text += "The number is " + j + "<br>";
+}
+
+            document.getElementById("broke").innerHTML = text;
+        </script>
+    </div>
+
+    <div>
+        <p id="move"></p>
+        
+    <script>
+        let stuff = "";
+        for (let i = 0; i < 10; i++) {
+        if (i === 3) { continue; }
+        text += "The number is " + i + "<br>";
+}
+        document.getElementById("move").innerHTML = stuff;
+    </script>
+
+    </div>
+
+    <div>
+        <p onclick="shall_we()">Shall we click?</p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
