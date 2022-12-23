@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<script src="js/javascript_2.js" defer></script>
+	<link rel="stylesheet" href="css/css_1.css">
+
+</head>
+
+<body>
+	<h1>Contact<h1>
+	<div id="contact">
+		<form = name="phone" action="" onsubmit="return valid()" method="post">
+			<label for="digits">Please enter your phone number:</label><br>
+				<input type="tel" id="digits" name="Digits" 
+				pattern=[0-9]{3}-[0-9]{3}-[0-9]{4} required><br>
+				<p>Format: 123-456-7890</p><br>
+				<input onclick="valid()" type="submit">
+		</form>
+	</div>
+</body>
+</html>
