@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+		<body>
+			<p>Click here?</p>
+			<p id="one">Where am I going?</p>
+			<script>
+				
+				// Event setup using a convenience method
+				$( "p" ).click(function() {
+				console.log( "You clicked a paragraph!" );
+			});
+			
+				// Slowly hide all paragraphs
+				$( "#one" ).hide( "slow" );
+			</script>
+		</body>
+</html>
