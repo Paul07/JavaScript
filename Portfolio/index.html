@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Paul Brandenburger</title>
+        <link rel="stylesheet" type="text/css" href="css/port.css">
+    </head>
+
+    <!--BODY-->
+    <body class="background">
+
+        <!--NAVBAR-->
+        <div class="navbar">
+            <a class="active" href="#home">Home</a>
+			<a href="#slideshow">Slideshow</a>
+            <a href="#about">About</a>
+            <a href="#github">Github</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="Contact">Contact</a>
+        </div>
+
+        <!--Breaks used to add space between nav and heading-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="home">
+            <video autoplay muted loop id="typing_video">
+                <source src="images/Typing.mp4" type="video/mp4">
+                <!--DISPLAY IF VIDEO DOESNT RUN-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="video_text">
+            <h1 class="white-text">Paul Brandenburger's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Code is like humor. When you have to explain it, it’s bad.</q>
+                    <br> Cory House
+                    <br>
+                    <br>Hi! This is the portfolio website of Paul Brandenburger.
+                    <br>Thanks for taking the time to stop by and get to know a little about me! 
+                </p>
+            </strong>
+        </div>
+		
+		<!---slideshow--->
+		<div id="slideshow">
+			<div id="slideshow_background">
+				<div id="slideshow_container">
+					<!-- slide 1 0f 6-->
+					<div class="mySlides fade">
+						<img class="Slideshow_Images" src="images/" alt="Add a picture here!">
+						<div class="text">I'm available to assist you on your project!</div>
+					</div>
+					<!-- slide 2 0f 6-->
+					<div class="mySlides fade">
+						<img class="Slideshow_Images" src="images/" alt="Add a picture here!">
+						<div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+					</div>
+					<!-- slide 3 0f 6-->
+					<div class="mySlides fade">
+						<img class="Slideshow_Images" src="images/" alt="Add a picture here!">
+						<div class="text">the popular programming language Python,</div>
+					</div>
+					<!-- slide 4 0f 6-->
+					<div class="mySlides fade">
+						<img class="Slideshow_Images" src="images/" alt="Add a picture here!">
+						<div class="text">back end development, databases and SQL.</div>
+					</div>
+					<!-- slide 5 0f 5-->
+					<div class="mySlides fade">
+						<img class="Slideshow_Images" src="images/" alt="Add a picture here!">
+						<div class="text">Contact me now!</div>
+					</div>
+					<!--prev and next buttons-->
+					<a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br><!--for spacing-->
+				
+				<!--slideshow dots for navigation of the slides-->
+				<div style="text-align: center">
+					<span class="dot" onclick="currentslide(1)"></span>
+					<span class="dot" onclick="currentslide(2)"></span>
+					<span class="dot" onclick="currentslide(3)"></span>
+					<span class="dot" onclick="currentslide(4)"></span>
+					<span class="dot" onclick="currentslide(5)"></span>
+				</div>
+			</div>
+		</div>
+
+        <!--ABOUT SECTION-->
+        <div class="row" id="about">
+            <!--LEFT COLUMN-->
+            <div class="column_2">
+				<img src="images/london.jpg" alt="pic to be added later">
+			</div>
+			<!--RIGHT COLUMN-->
+			<div class="column_1">
+                <h1>About</h1>
+                <p>
+                    I am a recent graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
+                    Software Developer Boot Camp. I am trained and experienced in the following web and programming languages:
+                    <br>HTML, CSS, JavaScript, SQL, Python, and more.
+                    <br>I am a full-stack developer and would love to work with you on your project.
+                    <br>Please <a onclick="openForm()" class="Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB SECTION-->
+        <div class="row" id="github">
+            <!--LEFT COLUMN-->
+            <div class="column_1">
+                <h1>GitHub</h1>
+                <p>
+                   You can view my coding projects on GitHub:
+                   <br>
+                   <p class="center"><a href="https://github.com/Paul07" target="blank">Paul's GitHub</a></p> 
+                </p>
+            </div>
+            <!--RIGHT COLUMN, FINISH THE LINK TO YOUR PORTFOLIO!-->
+            <div class="column_2">
+                <a href="https://github.com" target="blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+    <!--CONTACT FORM-->
+	<div id="Contact">
+		<button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+		<div class="form-popup" id="myForm">
+			<form action="https://formspree.io/f/xlevqqoa" method="POST" class="form-container">
+				<h1>Contact</h1>
+				<label for="name"><b>Name</b></label>
+					<input type="text" placeholder="Please enter your name here" name="name" required>
+				<label for="phone"><b>Phone</b></label>
+					<input type="text" placeholder="Please enter your phone number here" name="phone">
+				<label for="email"><b>Email</b></label>
+					<input type="text" placeholder="Please enter your Email address here" name="email" required>
+				<label for="message"><b>Message</b></label>
+					<input type="text" placeholder="Please type any additional information here" name="message">
+					
+				<button type="submit" class="btn">SUBMIT</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+			</form>
+		</div>
+	</div>
+
+		<footer>
+			<p>
+				<class="center">Paul Brandenburger
+				<br>
+			</p>
+		</footer>
+		<script src="js/portfolio.js"></script>
+    </body>
+</html>
