@@ -1,5 +1,5 @@
 # JavaScript
-Some small projects that I made involving JavaScript.
+Some small projects that I made using JavaScript.
 
 Pizza menu
 Tic-Tac-Toe
